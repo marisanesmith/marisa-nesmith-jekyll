@@ -11,3 +11,23 @@
     once: false, // whether animation should happen only once - while scrolling down
 });
 </script>
+
+<!-------- lIGHTGALLERY --------->
+
+<script src="js/lightgallery.umd.js"></script>
+
+<!-- lightgallery plugins -->
+<script src="js/plugins/lg-thumbnail.umd.js"></script>
+<script src="js/plugins/lg-zoom.umd.js"></script>
+
+<script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'), {
+        speed: 500,
+        mode: fade,
+        dowload: false,
+        enableSwipe: true,
+        closable: true,
+        controls: true, 
+        escKey: true,
+    })
+</script>
