@@ -237,17 +237,27 @@ svg:not(:root) {
 
 .box-shadow { box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; }
 
+.gallery [class*="col-"] {
+    padding: 0.5%;
+}
 
 .bg-image {
-    background-color: white;
+    background-color:rgb(240,240,240);
     background-size: cover; 
+    background-repeat: no-repeat;
     min-height: 10rem;
 }
 
 .landscape { padding-bottom: 65%; }
+.landscape-wide { padding-bottom: 56%; }
 .portrait { padding-bottom: 125%; }
+.portrait-tall { padding-bottom: 175%; }
 .square { padding-bottom: 100%; }
 
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
 
 .rounded {
     border-top-left-radius: 80%;

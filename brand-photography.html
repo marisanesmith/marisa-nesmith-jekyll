@@ -1,24 +1,44 @@
 ---
 layout: default
 title: Marisa NeSmith Brand Photography
+gallery:
+ - column-size: col-3_sm-6_xs-12
+   aspect-ratio: square
+   background-image: /images/bali-rice-terraces.jpg
+ - column-size: col-3_sm-6_xs-12
+   aspect-ratio: square
+   background-image: /images/ocean.jpg
+ - column-size: col-3_sm-6_xs-12
+   aspect-ratio: square
+   background-image: /images/maine-lighthouse.jpg
+ - column-size: col-3_sm-6_xs-12
+   aspect-ratio: square
+   background-image: /images/mandalay.jpg
+ - column-size: col-3_sm-6_xs-12
+   aspect-ratio: square
+   background-image: /images/morocco.jpg
+ - column-size: col-3_sm-6_xs-12
+   aspect-ratio: square
+   background-image: /images/entalula-island.jpg
+   position: bg-pos-b
+ - column-size: col-3_sm-6_xs-12
+   aspect-ratio: square
+   background-image: /images/manarola.jpg
+ - column-size: col-3_sm-6_xs-12
+   aspect-ratio: square
+   background-image: /images/el-nido-philippines.jpg
+   position: bg-pos-b
 ---
 
-    <!-------- BRAND PHOTOGRAPHY -------->
+
     <section class="padded center">
-        <h3>Brand Photography</h3>
-        <div class="grid-center padded">
-            <a class="col-3_sm-6_xs_12 fancybox" href="/images/bali-rice-terraces.jpg" data-fancybox="gallery">
-                <div class="bg-image square" style="background-image:url('/images/bali-rice-terraces.jpg')"></div>
+        <h3 class="padded-sm">Brand Photography</h3>
+        <div class="grid-center gallery" id="lightgallery">
+            {% for item in page.gallery %}
+            <a class="{{item.column-size}} fancybox" href="{{item.background-image}}" data-fancybox="gallery">
+                <div class="bg-image {{item.aspect-ratio}} {{item.position}}" style="background-image:url('{{item.background-image}}')"></div>
             </a>
-            <a class="col-3_sm-6_xs_12 fancybox" href="/images/bali-rice-terraces.jpg" data-fancybox="gallery">
-                <div class="bg-image square" style="background-image:url('/images/bali-rice-terraces.jpg')"></div>
-            </a>
-            <a class="col-3_sm-6_xs_12 fancybox" href="/images/bali-rice-terraces.jpg" data-fancybox="gallery">
-                <div class="bg-image square" style="background-image:url('/images/bali-rice-terraces.jpg')"></div>
-            </a>
-            <a class="col-3_sm-6_xs_12 fancybox" href="/images/bali-rice-terraces.jpg" data-fancybox="gallery">
-                <div class="bg-image square" style="background-image:url('/images/bali-rice-terraces.jpg')"></div>
-            </a>
+            {% endfor %}
         </div>
     </section>
 
