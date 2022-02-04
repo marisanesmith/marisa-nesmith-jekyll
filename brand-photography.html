@@ -4,39 +4,39 @@ title: Marisa NeSmith Brand Photography
 gallery:
  - column-size: col-3_sm-6_xs-12
    aspect-ratio: square
-   background-image: /images/bali-rice-terraces.jpg
+   background_image: /images/bali-rice-terraces.jpg
  - column-size: col-3_sm-6_xs-12
    aspect-ratio: square
-   background-image: /images/ocean.jpg
+   background_image: /images/ocean.jpg
  - column-size: col-3_sm-6_xs-12
    aspect-ratio: square
-   background-image: /images/maine-lighthouse.jpg
+   background_image: /images/maine-lighthouse.jpg
  - column-size: col-3_sm-6_xs-12
    aspect-ratio: square
-   background-image: /images/mandalay.jpg
+   background_image: /images/mandalay.jpg
  - column-size: col-3_sm-6_xs-12
    aspect-ratio: square
-   background-image: /images/morocco.jpg
+   background_image: /images/morocco.jpg
  - column-size: col-3_sm-6_xs-12
    aspect-ratio: square
-   background-image: /images/entalula-island.jpg
+   background_image: /images/entalula-island.jpg
    position: bg-pos-b
  - column-size: col-3_sm-6_xs-12
    aspect-ratio: square
-   background-image: /images/manarola.jpg
+   background_image: /images/manarola.jpg
  - column-size: col-3_sm-6_xs-12
    aspect-ratio: square
-   background-image: /images/el-nido-philippines.jpg
+   background_image: /images/el-nido-philippines.jpg
    position: bg-pos-b
 ---
 
 
-    <section class="padded center">
-        <h3 class="padded-sm">Brand Photography</h3>
+    <section class="padded center bg-linen">
+        <h3 class="mb">Brand Photography</h3>
         <div class="grid-center gallery" id="lightgallery">
             {% for item in page.gallery %}
-            <a class="{{item.column-size}} fancybox" href="{{item.background-image}}" data-fancybox="gallery">
-                <div class="bg-image {{item.aspect-ratio}} {{item.position}}" style="background-image:url('{{item.background-image}}')"></div>
+            <a class="{{item.column-size}} fancybox" href="{{item.background_image}}" data-fancybox="gallery">
+                <div class="bg-image {{item.aspect-ratio}} {{item.position}}" style="background-image:url('{{item.background_image}}')"></div>
             </a>
             {% endfor %}
         </div>
@@ -53,34 +53,29 @@ gallery:
 
     <!--------- CONTINENT GALLERY ----------->
     <section class="grid tall-80 padding-t padding-b bg-linen">
-        <div class="col-6_sm-12 bg-image linen-border bg-morocco"></div>
-        <div class="col-6_sm-12 bg-image linen-border bg-rice-terrace"></div>
+        <div class="col-4_sm-12 bg-image linen-border bg-morocco"></div>
+        <div class="col-4_sm-12 bg-image linen-border bg-rice-terrace"></div>
+        <div class="col-4_sm-12 bg-image linen-border bg-elephant"></div>
         <!-- <div class="col-3_md-6_sm-12 bg-image border bg-marisa-portrait-10"></div> -->
         <!-- <div class="col-3_md-6_sm-12 bg-image border bg-marisa-portrait-10"></div> -->
     </section>
 
-    <!-------- Let's Connect -------->
-    <section class="grid-middle padded">
-        <div class="col-12 center">
-            <h2 class="padded-sm mb-sm">Let's Connect</h2>
-            <a href="#" class="button mr">Instagram</a>
-            <a href="#" class="button ml">Work with Me</a>
-        </div>
-    </section>
+      <!-------- Let's Connect -------->
+      {% include connect.html %}
 
     <!------------ IMAGE GALLERY ---------->
 
     <div class="gallery grid-middle padding-t padding-b justify bg-linen">
         <div class="col-4">
-            <div class="bg-image mb bg-lighthouse square"></div>
-            <div class="bg-image portrait bg-komodo"></div>
+            <div class="bg-image box-shadow mb bg-lighthouse square"></div>
+            <div class="bg-image box-shadow portrait bg-komodo"></div>
         </div>
         <div class="col-3">
-            <div class="bg-image mb bg-morocco tall-portrait"></div>
-            <div class="bg-image bg-mandalay tall-portrait"></div>
+            <div class="bg-image box-shadow mb bg-morocco tall-portrait"></div>
+            <div class="bg-image box-shadow bg-mandalay tall-portrait"></div>
         </div>
         <div class="col-4">
-            <div class="bg-image mb bg-manarola portrait"></div>
-            <div class="bg-image square bg-el-nido"></div>
+            <div class="bg-image box-shadow mb bg-manarola portrait"></div>
+            <div class="bg-image box-shadow square bg-el-nido"></div>
         </div>
     </div>

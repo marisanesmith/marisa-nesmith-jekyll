@@ -178,6 +178,7 @@ svg:not(:root) {
 
 .padding-l-sm { padding-left: 4%; }
 .padding-t-sm { padding-top: 3%; }
+.padding-r-sm { padding-right: 3%; }
 
 .featured-padded { 
     padding-left: 10%;
@@ -276,6 +277,14 @@ svg:not(:root) {
     background-size: cover;
     background-position: center;
     min-height: 90vh;
+    position: relative;
+}
+
+.banner-hotel {
+    background-image: url('/images/morocco.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
     position: relative;
 }
 
