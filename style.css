@@ -25,9 +25,10 @@ Slate Grey #292c33
 header {
     padding: 1% 5%;
 }
-/* section {
-    border: 1px solid grey;
-} */
+
+header [class*=col] {
+    padding: 0;
+}
 
 body,
 html {
@@ -76,10 +77,6 @@ h5 {
 
 .logo {
     font-family: minerva-modern, sans-serif;
-    /* margin-top: 2rem; */
-    /* padding-top: 1rem; */
-    top: 2px;
-    left: 80px;
     text-transform: uppercase;
     font-weight: 400;
     font-style: normal;
@@ -486,4 +483,57 @@ form button:hover {
   color: #292c33;
   border: 2px solid #227872;
   cursor: pointer;
+}
+
+/* Menu & Mobile Menu */
+.hamburger-button {
+    cursor: pointer; 
+    /* padding: 1.5rem; */
+    padding-right: 5%;
+    display: inline-block;
+    line-height: 0.7;
+}
+
+.hamburger-button.active {
+    color: #227872;
+}
+
+.mobile-menu {
+    color: inherit;
+    display: none;
+    background-color: #ede8e3;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 5vh 4%;
+}
+
+/* General Responsive Styles (Desktop and below) */
+
+.mob-show {
+    display: none;
+}
+
+/* Media Queries */
+
+@media(max-width: 64em) {
+    .mob-hide { display: none; }
+    .mob-show { display: block; }
+    h1 { font-size: 2rem; }
+    nav a { font-size: 2rem; }
+}
+
+@media(max-width: 48em) {
+    .mob-hide { display: none; }
+    .mob-show { display: block; }
+    h1 { font-size: 1.7rem; }
+    nav a { font-size: 1.7rem; }
+}
+
+@media(max-width: 36em) {
+    .mob-hide { display: none; }
+    .mob-show { display: block; }
+    h1 { font-size: 1.3rem; }
+    nav a { font-size: 1.3rem; }
 }
