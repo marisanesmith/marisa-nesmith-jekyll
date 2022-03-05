@@ -291,10 +291,10 @@ svg:not(:root) {
 .bg-pos-c { background-position: center; }
 
 .rounded {
-    border-top-left-radius: 80%;
-    border-bottom-right-radius: 80%;
-    border-top-right-radius: 80%;
-    border-bottom-left-radius: 80%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
 }
 
 .rounded-2 {
