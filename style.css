@@ -257,6 +257,11 @@ svg:not(:root) {
 
 .linen-text { color: #ede8e3; }
 
+.footer-text {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
 .bg-featured    { background-color: #003734; }
 .bg-dark-grey   { background-color: #8d9097 ;}
 .bg-light-grey  { background-color: #c4cbd3; }
@@ -589,11 +594,14 @@ form button:hover {
     .mob-show { display: block; }
     h1 { font-size: 1.7rem; }
     nav a { font-size: 1.7rem; }
+    .footer-text { font-size: 1rem; }
 }
 
 @media(max-width: 36em) {
     .mob-hide { display: none; }
     .mob-show { display: block; }
     h1 { font-size: 1.3rem; }
+    h2 { font-size: 1.2rem; }
     nav a { font-size: 1.3rem; }
+    .footer-text { font-size: 0.6rem;}
 }
