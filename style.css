@@ -117,6 +117,11 @@ hr {
     margin-bottom: -11rem;
 }
 
+.sm-tx {
+    font-size: 1rem;
+    text-transform: none;
+}
+
 svg {
     position: absolute;
     bottom: -1px;
@@ -270,7 +275,7 @@ svg:not(:root) {
     background-color:rgb(240,240,240);
     background-size: cover; 
     background-repeat: no-repeat;
-    min-height: 10rem;
+    /* min-height: 10rem; */
 }
 
 .landscape { padding-bottom: 65%; }
