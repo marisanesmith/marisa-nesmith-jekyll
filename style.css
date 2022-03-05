@@ -114,7 +114,7 @@ hr {
     text-transform: none;
     padding: 0;
     margin-top: -14rem;
-    margin-bottom: -10rem;
+    margin-bottom: -11rem;
 }
 
 svg {
@@ -519,7 +519,12 @@ form button:hover {
     padding-right: 5%;
     display: inline-block;
     line-height: 0.7;
-    /* z-index: 10; */
+    z-index: 2;
+    /* position: fixed; */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .hamburger-button-2 {
@@ -536,6 +541,11 @@ form button:hover {
     left: 0;
 }
 
+.hamburger-button.active {
+    color: black;
+    z-index: 2;
+}
+
 .mobile-menu {
     color: inherit;
     display: none;
@@ -545,7 +555,8 @@ form button:hover {
     bottom: 0;
     right: 0;
     left: 0;
-    z-index: 10;
+    text-align: center;
+    z-index: 2;
 }
 
 .mobile-menu a {
